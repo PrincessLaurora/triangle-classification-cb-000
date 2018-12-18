@@ -19,9 +19,9 @@ class Triangle
   end
 
   class TriangleError < StandardError
-    if a = 0 && b = 0 && c = 0
-      raise TriangleError
+    def message
+      puts "Illegal"
     end
-  end
+
 
 end
