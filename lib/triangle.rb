@@ -15,15 +15,16 @@ class Triangle
         rescue TriangleError => error
             puts error.message
       end
-    if a == b && b == c
-    :equilateral
-    elsif a == b || b == c || a == c
-    :isosceles
     else
-    :scalene
+      if a == b && b == c
+      :equilateral
+      elsif a == b || b == c || a == c
+      :isosceles
+      else
+      :scalene
+        end
       end
     end
-  end
 
   class TriangleError < StandardError
     def message
