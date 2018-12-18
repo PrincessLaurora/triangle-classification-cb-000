@@ -5,7 +5,7 @@ class Triangle
   def initialize(a, b, c)
     @a = a
     @b = b
-    @c = c  
+    @c = c
   end
 
   def kind
@@ -16,12 +16,12 @@ class Triangle
     else
     :scalene
     end
-  end  
-    
-  end  
-      
+  end
+
+  end
+
   class TriangleError < StandardError
-      
+
     end
-  
+
 end
