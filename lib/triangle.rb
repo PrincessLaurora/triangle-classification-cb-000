@@ -22,6 +22,7 @@ class Triangle
     def message
       puts "Illegal"
     end
+  end
 
 
 end
