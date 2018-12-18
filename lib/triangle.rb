@@ -12,8 +12,6 @@ class Triangle
     if a == 0 || b == 0 || c == 0
       begin
           raise TriangleError
-        rescue TriangleError => error
-            puts error.message
       end
     else
       if a == b && b == c
@@ -27,10 +25,9 @@ class Triangle
     end
 
   class TriangleError < StandardError
-    def message
-      "Illegal"
-    end
   end
+
+  
 
 
 end
